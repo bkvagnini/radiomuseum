@@ -1,0 +1,2 @@
+mysql_connect("localhost", "USERNAME", "PASSWORD") 	or die(mysql_error());
+mysql_select_db("gallerydb") or die(mysql_error());

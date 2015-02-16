@@ -1,0 +1,128 @@
+
+<html><head><title>Kirk Gallery Collection- Art Entry</title>
+</head>
+<body>
+
+
+<div align="left"><img src="../images/kirk_logo.JPG" alt="kirk collection logo" width="802">
+  <br />
+  
+  
+</div>
+<form name="galleryform" action="gallery_insert.php" method="post" ENCTYPE="multipart/form-data">
+
+<!--
+<form name="Issuesform" action="<?php echo $_SERVER['SELF'] ?>" method="post" ENCTYPE="multipart/form-data">
+-->
+
+
+<table width="759" height="213" border="1">
+  <tr>
+    <td width="86"><label><strong>Object Name </strong></label></td>
+    <td width="162" colspan="3"><input type="text" title="Title" name="Title" id="Title" /></td>
+    <td width="163"><strong>Accession Number </strong></td>
+    <td width="328"><input type="text" title="Accession_Number" name="Accession_Number" id="Accession_Number" /></td>
+  </tr>
+  
+  <tr>
+    <td><strong>Classification</strong></td>
+    <td colspan="5"><input type="text" title="Classification" name="Classification" id="Classification" /></td>
+  </tr>
+  <tr>
+    <td><label><strong>Maker/Artist</strong></label></td>
+    <td colspan="5"><input type="text" title="Artist" name="Artist" id="Artist" /></td>
+  </tr>
+   <tr>
+    <td><label><strong>Date of Object</strong></label></td>
+    <td colspan="5"><input type="text" title="DateofObject" name="DateofObject" id="DateofObject" /></td>
+  </tr>
+     <tr>
+    <td><label><strong>Designer</strong></label></td>
+    <td colspan="5"><input type="text" title="Designer" name="Designer" id="Designer" /></td>
+  </tr>
+   <tr>
+    <td><label><strong>Country</strong></label></td>
+    <td><input name="Country" type="text" id="Country" title="Country" value="US" /></td>
+    <td><strong>State</strong></td>
+    <td><input type="text" title="State" name="State" id="State" /></td>
+    <td><strong>City</strong></td>
+    <td><input type="text" title="City" name="City" id="City" /></td>
+   </tr>
+   <tr>
+    <td><label><strong>Techniques</strong></label></td>
+    <td colspan="5"><input type="text" title="Techniques" name="Techniques" id="Techniques" /></td>
+  </tr>
+   <tr>
+    <td><label><strong>Materials</strong></label></td>
+    <td colspan="5"><input type="text" title="Materials" name="Materials" id="Materials" /></td>
+  </tr>
+    <tr>
+    <td><label><strong>Colors</strong></label></td>
+    <td colspan="5"><input type="text" title="Colors" name="Colors" id="Colors" /></td>
+  </tr>
+      <tr>
+    <td><label><strong>Style, Type or Pattern</strong></label></td>
+    <td colspan="5"><input type="text" title="Style" name="Style" id="Style" /></td>
+  </tr>
+       <tr>
+    <td><label><strong>Size</strong></label></td>
+    <td colspan="5"><input type="text" title="Size" name="Size" id="Size" /></td>
+  </tr>
+  <tr>
+    <td><label><strong>Description</strong></label></td>
+    <td colspan="5"><textarea name="Description" cols="100" rows="5" id="Description"></textarea></td>
+  </tr>
+  <tr>
+    <td><label><strong>Source</strong></label></td>
+    <td colspan="3"><input name="Source" type="text" id="Source" title="Source" value="Gift" /></td>
+    <td><strong>Association</strong></td>
+    <td><input type="text" title="Association" name="Association" id="Association" /></td>
+  </tr>
+    <tr>
+    <td><label><strong>Gift, Loan or Purchase</strong></label></td>
+    <td colspan="3"><input type="text" title="Gift" name="Gift" id="Gift" /></td>
+    <td><strong>Date Acquired</strong></td>
+    <td><input name="DateAcquired" type="text" id="DateAcquired" title="DateAcquired" value="1996-07-15" /></td>
+  </tr>
+ 
+   <tr>
+     <td><label><strong>Condition</strong></label></td>
+     <td colspan="3"><select name="Condition" id="Condition">
+       <option value="Not Chosen">Choose One</option>
+       <option value="Excellent">Excellent</option>
+       <option value="Good">Good</option>
+       <option value="Fair">Fair</option>
+       <option value="Poor">Poor</option>
+     </select>     </td>
+     <td><strong>Explain</strong></td>
+     <td><input type="text" title="ConditionExplain" name="ConditionExplain" id="ConditionExplain" /></td>
+   </tr>
+    <tr>
+     <td><label><strong>Location of Art</strong></label></td>
+     <td colspan="5"><input type="text" title="Location" name="Location" id="Location" /></td>
+   </tr>
+    <tr>
+     <td><label><strong>Entered By </strong></label></td>
+     <td colspan="3"><input type="text" title="EnteredBy" name="EnteredBy" id="EnteredBy" /></td>
+     <td><strong>Date Entered </strong></td>
+     <td><input type="text" title="DateEntered" name="DateEntered" id="DateEntered" /></td>
+    </tr>
+	 <tr>
+     <td><label><strong>Image Name</strong></label></td>
+     <td colspan="5"><input type="text" title="Image" name="Image" id="Image" /></td>
+   </tr>
+</table>
+   <input type="submit" value="Submit">
+  </p>
+
+</form>
+<p>NOTES: 
+<ul>
+  <li>The Date has to be formatted like so: (2008-12-15 and 2008-12-16- fullyear-month-date)</li>
+<!-- 
+<li>It doesn't like commas in the text fields (due to SQL thinking it's the end of the text string). Until I put some JavaScript in to work around that, don't put them in. The Insert Query will fail.</li>
+-->
+  <li>DO NOT hit the back button: It will resubmit the record and I will have duplicate entries, which are a pain to remove.  </li>
+</ul>
+</body>
+</html>
